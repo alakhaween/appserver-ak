@@ -1,0 +1,57 @@
+#  -*- coding: utf-8 -*-
+
+{
+    "name": "Central-Test Core",
+    "version": "0.1",
+    "author": "Audaxis",
+    "category": 'Central_Test',
+    'complexity': "easy",
+    "description": """
+        Central test V1
+    """,
+    'website': "",
+    'images': [],
+    'init_xml': [],
+    "depends": ['base', 'crm', 'purchase','delivery','sale_stock','account_analytic_analysis',
+                'account_accountant','l10n_fr','multi_company',
+                 'sale_analytic_plans',#'survey'
+              ],
+    'data': [
+             "views/sale_area_view.xml",
+             "views/sale_order_view.xml",
+             "views/res_partner_view.xml",
+             "views/product_view.xml",
+             "views/ct_promotion_discount_view.xml",
+             "views/ct_volume_discount_view.xml",
+             "views/ct_contract_folder_view.xml",
+             "views/ct_transaction_view.xml",
+             "views/ct_stock_view.xml",
+             "views/res_country_view.xml",
+             "views/account_analytic_account_view.xml",
+             "views/account_invoice_line_view.xml",
+             "views/ct_commitment_discount_view.xml",
+             "views/ct_pack_evo_price_view.xml",
+             "views/ct_locale_view.xml",
+             "views/ct_language_view.xml",
+             "views/ct_payment_method_view.xml",
+             "views/ct_faire_use_view.xml",
+             "views/ct_industry_view.xml",
+             "views/ct_known_by_view.xml",
+             "views/ct_provenance_view.xml",
+             "views/ct_region_view.xml",
+             "data/ir_sequence.xml",
+             "data/ct_initial_setup.xml",
+             "data/ct_fair_use_data.xml",
+             "wizard/add_product_to_sale_areas_and_countries_view.xml",
+             "wizard/remove_product_from_sale_areas_and_countries_view.xml",
+             "wizard/transfer_test_credits_view.xml",
+             "wizard/consume_test_credits_view.xml",
+    ],
+    'demo_xml': [
+    ],
+    'test': [
+    ],
+    'installable': True,
+    'auto_install': False,
+}
+#  vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
